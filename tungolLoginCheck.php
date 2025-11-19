@@ -17,7 +17,6 @@ $result = mysqli_query($jerwin, $query);
 
 if (mysqli_num_rows($result) > 0) {
 
-    // SUCCESS → Redirect
     header("Location: Project.html");
     exit();
 
