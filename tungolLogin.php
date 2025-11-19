@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="tungolLogin.css">
+    <title>Log In</title>
+  <script>
+    function clearForm(){
+        document.getElementById("loginForm").reset();
+    }
+    </script>
+
+</head>
+<body>
+    <center>
+   
+<form id="loginForm" action="tungolLoginCheck.php" method="post">
+     <h1> LOGIN FORM </h1>
+    <table>
+        <tr>
+            <td><label for="tungolUsername" >Username</label></td>
+            <td><input type="text" name="tungolUsername" id="tungolUserName" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="tungolPassword" >Password</label></td>
+            <td><input type="password" name="tungolPassword" id="tungolPassword" required></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" name="tungolLogin" id="tungolbtn1">Login</button>
+                <button type="button" id="btn2" onclick="clearForm()">Clear</button>
+            </td>
+        </tr>
+</table>
+</form>
+
+</center>
+</body>
+</html>
